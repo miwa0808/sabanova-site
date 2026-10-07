@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="./assets/images/common/logofish.svg">
+    <title>SABANOVA | HOME</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Yusei+Magic&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body id="top">
+    <header class="l-header">
+        <div class="l-header__inner">
+            <a href="./index.html" class="l-header__logo">
+                <img src="./assets/images/common/logo.svg" alt="サバノバ SABANOVA">
+            </a>
+
+            <nav class="l-header__nav">
+
+                <ul class="l-header__nav-list">
+
+                    <li class="l-header__nav-item">
+                        <a href="./index.html" class="l-header__nav-link">ホーム</a>
+                    </li>
+
+                    <li class="l-header__nav-item">
+                        <a href="./menu.html" class="l-header__nav-link">メニュー</a>
+                    </li>
+
+                    <li class="l-header__nav-item">
+                        <a href="./index.html#about" class="l-header__nav-link">サバノバについて</a>
+                    </li>
+
+                    <li class="l-header__nav-item">
+                        <a href="./index.html#campaign" class="l-header__nav-link">キャンペーン</a>
+                    </li>
+
+                    <li class="l-header__nav-item">
+                        <a href="./index.html#store-info" class="l-header__nav-link">店舗詳細</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+            <a href="#" class="c-button c-button--contact">ご予約・お問い合わせ<svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                    </path>
+                </svg></a>
+        </div>
+    </header>
+
+    <div class="l-floating-header" id="floatingHeader">
+
+        <a href="./index.html" class="l-floating-header__logo">
+            <img src="./assets/images/common/logo.svg" alt="サバノバ SABANOVA">
+        </a>
+
+        <button class="l-floating-header__menu-button" id="menuButton" type="button" aria-label="メニューを開く"
+            aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+
+    <!-- ハンバーガーメニュー -->
+    <div class="l-drawer" id="drawer">
+
+        <button class="l-drawer__close" id="drawerClose" type="button" aria-label="メニューを閉じる">
+            ×
+        </button>
+
+        <nav class="l-drawer__nav">
+            <ul>
+                <li><a href="./index.html">トップ</a></li>
+                <li><a href="./menu.html">メニュー</a></li>
+                <li><a href="./index.html#about">サバノバについて</a></li>
+                <li><a href="./index.html#campaign">キャンペーン</a></li>
+                <li><a href="./index.html#store-info">店舗詳細</a></li>
+                <li><a href="./index.html#access">アクセス</a></li>
+            </ul>
+
+            <a href="#" class="l-drawer__contact">
+                ご予約・お問い合わせ
+            </a>
+        </nav>
+
+    </div>
+
+    <div class="l-drawer-overlay" id="drawerOverlay"></div>
+
+    <main>
+        <section class="p-home-mv">
+
+            <picture>
+                <source media="(max-width: 767px)" srcset="./assets/images/home/mv-sp.png">
+                <img src="./assets/images/home/mv-pc.png" alt="サバチャージ！！！ サバサンド ￥430～">
+            </picture>
+        </section>
+
+
+        <section class="p-home-menu" id="menu">
+            <div class="c-section-heading">
+                <h2 class="c-section-heading__title">
+                    メニュー
+                    <span>MENU</span>
+                </h2>
+            </div>
+
+
+            <div class="p-home-menu__cards">
+                <article class="c-menu-card">
+
+                    <span class="c-menu-card__badge c-menu-card__badge--lunch">
+                        平日ランチ限定
+                    </span>
+
+                    <img src="./assets/images/menu/set/saba-set/saba-sandwich-set-regular.png" alt="ヘルシーセット">
+                    <h3 class="c-menu-card__name">ヘルシーセット</h3>
+                    <p class="c-menu-card__price">￥550</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/set/salmon-avocado-set/salmon-avocado-sandwich-set-regular.png"
+                        alt="サーモンアボカドサンドセット">
+                    <h3 class="c-menu-card__name">サーモンアボカドサンドセット</h3>
+                    <p class="c-menu-card__price">￥960</p>
+                </article>
+
+                <article class="c-menu-card">
+
+                    <span class="c-menu-card__badge c-menu-card__badge--dinner">ディナー限定</span>
+
+
+                    <img src="./assets/images/menu/night/night-mini-fish-and-chips.png" alt="ミニフィッシュ＆チップス+対象アルコールコンビ">
+                    <h3 class="c-menu-card__name">ミニフィッシュ＆チップス<br>+対象アルコールコンビ</h3>
+                    <p class="c-menu-card__price">￥980</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/dessert/sabanova-soft.png" alt="サバノバソフト">
+                    <h3 class="c-menu-card__name">サバノバソフト</h3>
+                    <p class="c-menu-card__price">￥450</p>
+                </article>
+
+            </div>
+
+
+            <a href="./menu.html" class="p-home-menu__more">
+                もっと見る
+
+                <span class="c-circle-arrow" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                        </path>
+                    </svg>
+                </span>
+            </a>
+        </section>
+
+
+        <section class="p-home-about" id="about">
+            <picture class="p-home-about__visual">
+                <source media="(max-width: 767px)" srcset="./assets/images/home/about-sp.png">
+
+                <img src="./assets/images/home/about-pc.png"
+                    alt="サバチャーーージ！！！ 魚と野菜で今日の元気を満タンに。サバノバは、毎日でも食べられるお魚とお野菜の美味しいサンドイッチで、あなたの元気をチャージします。">
+            </picture>
+
+            <div class="p-home-about__more">
+                <p>サバノバについて</p>
+
+                <a href="#" class="c-button c-button--about">
+                    詳しく見る
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <section class="p-home-campaign" id="campaign">
+            <h2 class="p-home-campaign__title">
+                サバノバをもっと楽しもう
+            </h2>
+
+            <ul class="p-home-campaign__list">
+
+                <li class="p-home-campaign__item">
+                    <a href="#" class="p-home-campaign__link">
+                        <img src="./assets/images/home/campaign-lunch.png" alt="平日限定 ランチがオトク"
+                            class="p-home-campaign__image">
+                    </a>
+                </li>
+
+                <li class="p-home-campaign__item">
+                    <a href="#" class="p-home-campaign__link">
+                        <img src="./assets/images/home/campaign-night.png" alt="夜ノバ サバノバでお得に飲もう"
+                            class="p-home-campaign__image">
+                    </a>
+                </li>
+
+                <li class="p-home-campaign__item">
+                    <a href="#" class="p-home-campaign__link">
+                        <img src="./assets/images/home/campaign-weekend.png" alt="週末限定 WEEKEND BOX"
+                            class="p-home-campaign__image">
+                    </a>
+                </li>
+
+                <li class="p-home-campaign__item">
+                    <a href="#" class="p-home-campaign__link">
+                        <img src="./assets/images/home/campaign-sweets.png" alt="サバノバスイーツ あまい×かわいい ほっと一息幸せチャージ"
+                            class="p-home-campaign__image">
+                    </a>
+                </li>
+            </ul>
+
+            <a href="#" class="p-home-campaign__more">
+                もっと見る
+                <span class="c-circle-arrow" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                        </path>
+                    </svg>
+                </span>
+            </a>
+        </section>
+
+
+        <section class="p-home-store-info" id="store-info">
+
+
+            <div class="c-section-heading c-section-heading--white">
+                <h2 class="c-section-heading__title">
+                    店舗詳細
+                    <span>STORE INFO</span>
+                </h2>
+            </div>
+
+            <div class="p-home-store-info__features">
+
+                <!-- PC：6個 × 1行 -->
+                <div class="p-home-store-info__features-layout p-home-store-info__features-layout--pc">
+                    <div class="c-feature-row">
+                        <img src="./assets/images/store-info/feature-seats.png" alt="56席">
+                        <img src="./assets/images/store-info/feature-wifi.png" alt="Free-WiFi">
+                        <img src="./assets/images/store-info/feature-charge.png" alt="充電OK">
+                        <img src="./assets/images/store-info/feature-takeout.png" alt="テイクアウトOK">
+                        <img src="./assets/images/store-info/feature-self-register.png" alt="セルフレジ">
+                        <img src="./assets/images/store-info/feature-no-smoking.png" alt="全席禁煙">
+                    </div>
+                </div>
+
+
+                <!-- 中間：3個 × 2行 -->
+                <div class="p-home-store-info__features-layout p-home-store-info__features-layout--tablet">
+
+                    <div class="c-feature-row">
+                        <img src="./assets/images/store-info/feature-seats.png" alt="56席">
+                        <img src="./assets/images/store-info/feature-wifi.png" alt="Free-WiFi">
+                        <img src="./assets/images/store-info/feature-charge.png" alt="充電OK">
+                    </div>
+
+                    <div class="c-feature-row">
+                        <img src="./assets/images/store-info/feature-takeout.png" alt="テイクアウトOK">
+                        <img src="./assets/images/store-info/feature-self-register.png" alt="セルフレジ">
+                        <img src="./assets/images/store-info/feature-no-smoking.png" alt="全席禁煙">
+                    </div>
+
+                </div>
+
+
+                <!-- SP：2個 × 3行 -->
+                <div class="p-home-store-info__features-layout p-home-store-info__features-layout--sp">
+
+                    <div class="c-feature-row">
+                        <img src="./assets/images/store-info/feature-seats.png" alt="56席">
+                        <img src="./assets/images/store-info/feature-wifi.png" alt="Free-WiFi">
+                    </div>
+
+                    <div class="c-feature-row">
+                        <img src="./assets/images/store-info/feature-charge.png" alt="充電OK">
+                        <img src="./assets/images/store-info/feature-takeout.png" alt="テイクアウトOK">
+                    </div>
+
+                    <div class="c-feature-row">
+                        <img src="./assets/images/store-info/feature-self-register.png" alt="セルフレジ">
+                        <img src="./assets/images/store-info/feature-no-smoking.png" alt="全席禁煙">
+                    </div>
+
+                </div>
+
+
+                <!-- 共通：下2個 -->
+                <div class="p-home-store-info__features-sub">
+                    <img src="./assets/images/store-info/feature-delivery.png" alt="デリバリー">
+                    <img src="./assets/images/store-info/feature-kids-chair.png" alt="キッズチェア">
+                </div>
+
+            </div>
+
+            <div class="p-home-store-info__cards">
+
+                <!-- 営業時間 -->
+                <section class="c-info-card">
+
+                    <div class="c-info-card__row">
+                        <div class="text-large">
+
+                            <svg class="icon-large" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM13 12H17V14H11V7H13V12Z">
+                                </path>
+                            </svg>
+                            営業時間
+                        </div>
+
+                        <p class="text-large">10:00〜21:00</p>
+                    </div>
+
+                    <div class="c-info-card__row">
+                        <div class="text-medium">
+
+                            <svg class="icon-medium" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM11 1H13V4H11V1ZM11 20H13V23H11V20ZM3.51472 4.92893L4.92893 3.51472L7.05025 5.63604L5.63604 7.05025L3.51472 4.92893ZM16.9497 18.364L18.364 16.9497L20.4853 19.0711L19.0711 20.4853L16.9497 18.364ZM19.0711 3.51472L20.4853 4.92893L18.364 7.05025L16.9497 5.63604L19.0711 3.51472ZM5.63604 16.9497L7.05025 18.364L4.92893 20.4853L3.51472 19.0711L5.63604 16.9497ZM23 11V13H20V11H23ZM4 11V13H1V11H4Z">
+                                </path>
+                            </svg>
+                            平日ランチメニュー
+                        </div>
+
+                        <p class="text-medium">10:00〜14:00</p>
+                    </div>
+
+                    <div class="c-info-card__row">
+                        <div class="text-medium">
+
+                            <svg class="icon-medium" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M10 7C10 10.866 13.134 14 17 14C18.9584 14 20.729 13.1957 21.9995 11.8995C22 11.933 22 11.9665 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C12.0335 2 12.067 2 12.1005 2.00049C10.8043 3.27098 10 5.04157 10 7ZM4 12C4 16.4183 7.58172 20 12 20C15.0583 20 17.7158 18.2839 19.062 15.7621C18.3945 15.9187 17.7035 16 17 16C12.0294 16 8 11.9706 8 7C8 6.29648 8.08133 5.60547 8.2379 4.938C5.71611 6.28423 4 8.9417 4 12Z">
+                                </path>
+                            </svg>
+                            ディナーメニュー
+                        </div>
+
+                        <p class="text-medium">18:00〜21:00</p>
+                    </div>
+
+                </section>
+
+
+                <!-- 決済方法 -->
+                <section class="c-info-card c-info-card--payment">
+
+                    <div class="text-large">
+
+                        <svg class="icon-large" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            id="Bill-4--Streamline-Sharp-Remix">
+                            <desc>
+                                Bill 4 Streamline Icon: https://streamlinehq.com
+                            </desc>
+                            <g id="bill-4--accounting-billing-payment-finance-cash-currency-money-bill-dollar-stack">
+                                <path id="Union" fill="#000000" fill-rule="evenodd"
+                                    d="M-0.000488281 2.49951H20.3042v5.19464h3.6962V21.5006H5.20654v-3.6807H-0.000488281V2.49951Zm2.499998281 2.5V15.3199H17.8042V4.99951H2.49951ZM13.119 10.1597c0 1.6339 -1.3286 2.9585 -2.9675 2.9585 -1.63884 0 -2.96742 -1.3246 -2.96742 -2.9585 0 -1.63396 1.32858 -2.95854 2.96742 -2.95854 1.6389 0 2.9675 1.32458 2.9675 2.95854Z"
+                                    clip-rule="evenodd" stroke-width="1"></path>
+                            </g>
+                        </svg>
+                        決済方法
+                    </div>
+
+                    <p class="text-medium">
+                        現金／クレジットカード／<br>
+                        交通系IC／QRコード決済
+                    </p>
+
+                </section>
+
+
+                <!-- 電話番号 -->
+                <section class="c-info-card c-info-card--phone">
+
+                    <div class="c-info-card__row">
+                        <div class="text-large">
+
+                            <svg class="icon-large" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M21 16.42V19.9561C21 20.4811 20.5941 20.9167 20.0705 20.9537C19.6331 20.9846 19.2763 21 19 21C10.1634 21 3 13.8366 3 5C3 4.72371 3.01545 4.36687 3.04635 3.9295C3.08337 3.40588 3.51894 3 4.04386 3H7.5801C7.83678 3 8.05176 3.19442 8.07753 3.4498C8.10067 3.67907 8.12218 3.86314 8.14207 4.00202C8.34435 5.41472 8.75753 6.75936 9.3487 8.00303C9.44359 8.20265 9.38171 8.44159 9.20185 8.57006L7.04355 10.1118C8.35752 13.1811 10.8189 15.6425 13.8882 16.9565L15.4271 14.8019C15.5572 14.6199 15.799 14.5573 16.001 14.6532C17.2446 15.2439 18.5891 15.6566 20.0016 15.8584C20.1396 15.8782 20.3225 15.8995 20.5502 15.9225C20.8056 15.9483 21 16.1633 21 16.42Z">
+                                </path>
+                            </svg>
+                            電話番号
+                        </div>
+
+                        <p class="text-large">014-383-1083</p>
+                    </div>
+
+                    <p class="text-medium">
+                        受付時間　10:00〜21:00
+                    </p>
+
+                    <p class="text-medium">
+                        商品のご予約はお電話より承ります。
+                    </p>
+
+                    <ul class="text-small">
+                        <li>・サンドイッチの特注(20個以上)のご注文は、3営業日前までのご予約をお願いいたします。</li>
+                        <li>・ご予約の変更・キャンセルは、3営業日前までのご連絡をお願いいたします。</li>
+                    </ul>
+
+                </section>
+
+            </div>
+
+        </section>
+
+
+        <section class="p-home-access" id="access">
+
+            <div class="c-section-heading">
+                <h2 class="c-section-heading__title">
+                    アクセス
+                    <span>ACCESS</span>
+                </h2>
+            </div>
+
+            <div class="p-home-access__body">
+                <div class="p-home-access__info">
+                    <dl>
+                        <div>
+                            <dt>住所</dt>
+                            <dd>〒014-38310<br>
+                                東京都中野区中央0-0-0</dd>
+                        </div>
+
+                        <div>
+                            <dt>最寄り駅</dt>
+                            <dd>
+                                東京メトロ丸ノ内線<br>
+                                都営地下鉄大江戸線<br>
+                                中野坂上駅　徒歩4分
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="p-home-access__map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.3979049169193!2d139.7204376!3d35.6918247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d5bce063c37%3A0xb548b9250334152f!2z44Kk44Oz44K_44O844OX44Op44OzSVTjgrnjgq_jg7zjg6s!5e0!3m2!1sja!2sjp!4v1791303191395!5m2!1sja!2sjp"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <a href="#top" class="c-back-to-top">TOP</a>
+    <footer class="l-footer">
+        <div class="l-footer__inner">
+
+
+            <div class="l-footer__brand">
+                <a href="./index.html" class="l-footer__logo">
+                    <img src="./assets/images/common/logo.svg" alt="サバノバ SABANOVA">
+                </a>
+
+
+                <address class="l-footer__shop-info">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="l-footer__tel-icon">
+                        <path
+                            d="M21 16.42V19.9561C21 20.4811 20.5941 20.9167 20.0705 20.9537C19.6331 20.9846 19.2763 21 19 21C10.1634 21 3 13.8366 3 5C3 4.72371 3.01545 4.36687 3.04635 3.9295C3.08337 3.40588 3.51894 3 4.04386 3H7.5801C7.83678 3 8.05176 3.19442 8.07753 3.4498C8.10067 3.67907 8.12218 3.86314 8.14207 4.00202C8.34435 5.41472 8.75753 6.75936 9.3487 8.00303C9.44359 8.20265 9.38171 8.44159 9.20185 8.57006L7.04355 10.1118C8.35752 13.1811 10.8189 15.6425 13.8882 16.9565L15.4271 14.8019C15.5572 14.6199 15.799 14.5573 16.001 14.6532C17.2446 15.2439 18.5891 15.6566 20.0016 15.8584C20.1396 15.8782 20.3225 15.8995 20.5502 15.9225C20.8056 15.9483 21 16.1633 21 16.42Z">
+                        </path>
+                    </svg>014-383-1083<br>
+                    〒014-38310<br>
+                    東京都中野区中央0-0-0
+                </address>
+            </div>
+
+            <nav class="l-footer__nav">
+                <ul class="l-footer__nav-list">
+                    <li><a href="./index.html">ホーム</a></li>
+                    <li><a href="./menu.html">メニュー</a></li>
+                    <li><a href="./index.html#about">サバノバについて</a></li>
+                    <li><a href="./index.html#campaign">キャンペーン</a></li>
+                </ul>
+
+                <ul class="l-footer__nav-list">
+                    <li><a href="./index.html#store-info">店舗詳細</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                    <li><a href="#">アレルギー情報</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+        <p class="l-footer__copyright">
+            <small>&copy;2026 株式会社HEALTHYJUNK All rights reserved.</small>
+        </p>
+
+    </footer>
+</body>
+
+</html>

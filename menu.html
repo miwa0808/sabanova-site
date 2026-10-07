@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="./assets/images/common/logofish.svg">
+    <title>SABANOVA | MENU</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Yusei+Magic&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+    <header class="l-header">
+        <div class="l-header__inner">
+            <a href="./index.html" class="l-header__logo">
+                <img src="./assets/images/common/logo.svg" alt="サバノバ SABANOVA">
+            </a>
+
+            <nav class="l-header__nav">
+
+                <ul class="l-header__nav-list">
+
+                    <li class="l-header__nav-item">
+                        <a href="./index.html" class="l-header__nav-link">ホーム</a>
+                    </li>
+
+                    <li class="l-header__nav-item">
+                        <a href="./menu.html" class="l-header__nav-link">メニュー</a>
+                    </li>
+
+                    <li class="l-header__nav-item">
+                        <a href="./index.html#about" class="l-header__nav-link">サバノバについて</a>
+                    </li>
+
+                    <li class="l-header__nav-item">
+                        <a href="./index.html#campaign" class="l-header__nav-link">キャンペーン</a>
+                    </li>
+
+                    <li class="l-header__nav-item">
+                        <a href="./index.html#store-info" class="l-header__nav-link">店舗詳細</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+            <a href="#" class="c-button c-button--contact">ご予約・お問い合わせ<svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                    </path>
+                </svg></a>
+        </div>
+    </header>
+
+    <div class="l-floating-header" id="floatingHeader">
+
+        <a href="./index.html" class="l-floating-header__logo">
+            <img src="./assets/images/common/logo.svg" alt="サバノバ SABANOVA">
+        </a>
+
+        <button class="l-floating-header__menu-button" id="menuButton" type="button" aria-label="メニューを開く"
+            aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+
+    <!-- ハンバーガーメニュー -->
+    <div class="l-drawer" id="drawer">
+
+        <button class="l-drawer__close" id="drawerClose" type="button" aria-label="メニューを閉じる">
+            ×
+        </button>
+
+        <nav class="l-drawer__nav">
+            <ul>
+                <li><a href="./index.html">トップ</a></li>
+                <li><a href="./menu.html">メニュー</a></li>
+                <li><a href="./index.html#about">サバノバについて</a></li>
+                <li><a href="./index.html#campaign">キャンペーン</a></li>
+                <li><a href="./index.html#store-info">店舗詳細</a></li>
+                <li><a href="./index.html#access">アクセス</a></li>
+            </ul>
+
+            <a href="#" class="l-drawer__contact">
+                ご予約・お問い合わせ
+            </a>
+        </nav>
+
+    </div>
+
+    <div class="l-drawer-overlay" id="drawerOverlay"></div>
+
+    <main>
+        <div class="p-menu">
+
+            <div class="c-section-heading">
+                <h1 class="c-section-heading__title">
+                    メニュー
+                    <span>MENU</span>
+                </h1>
+            </div>
+
+        </div>
+        <!-- メニューnav -->
+        <div class="p-menu__nav-wrap">
+
+            <button class="p-menu__nav-arrow" type="button" data-direction="left" aria-label="前のカテゴリーを見る">
+                ‹
+            </button>
+
+            <nav class="p-menu__nav" aria-label="メニューカテゴリー">
+                <a href="#regular-set">レギュラーセット</a>
+                <a href="#lunch-set">ランチセット</a>
+                <a href="#dinner">ディナー</a>
+                <a href="#sandwich">サンドイッチ</a>
+                <a href="#side">サイド</a>
+                <a href="#food">フード</a>
+                <a href="#dessert">デザート</a>
+                <a href="#drink">ドリンク</a>
+                <a href="#alcohol">アルコール</a>
+                <a href="#customize">カスタマイズ</a>
+            </nav>
+
+            <button class="p-menu__nav-arrow" type="button" data-direction="right" aria-label="次のカテゴリーを見る">
+                ›
+            </button>
+
+        </div>
+
+        <!-- おすすめ -->
+        <section class="p-menu__section" id="recommend">
+
+            <h2 class="p-menu__section-title">おすすめ</h2>
+
+            <div class="p-menu__list">
+
+                <article class="c-menu-card">
+                    <span class="c-menu-card__badge c-menu-card__badge--lunch">
+                        平日ランチ限定
+                    </span>
+
+                    <img src="./assets/images/menu/set/saba-set/saba-sandwich-set-regular.png" alt="ヘルシーセット">
+
+                    <h3 class="c-menu-card__name">ヘルシーセット</h3>
+                    <p class="c-menu-card__price">￥550</p>
+                </article>
+
+
+                <article class="c-menu-card">
+
+                    <img src="./assets/images/menu/set/salmon-avocado-set/salmon-avocado-sandwich-set-regular.png"
+                        alt="サーモンアボカドサンドセット">
+
+                    <h3 class="c-menu-card__name">
+                        サーモンアボカドサンドセット
+                    </h3>
+
+                    <p class="c-menu-card__price">￥960</p>
+                </article>
+
+
+                <article class="c-menu-card">
+
+                    <span class="c-menu-card__badge c-menu-card__badge--dinner">
+                        ディナー限定
+                    </span>
+
+                    <img src="./assets/images/menu/night/night-mini-fish-and-chips.png" alt="ミニフィッシュ＆チップス+対象アルコールコンビ">
+
+                    <h3 class="c-menu-card__name">
+                        ミニフィッシュ＆チップス<br>
+                        +対象アルコールコンビ
+                    </h3>
+
+                    <p class="c-menu-card__price">￥980</p>
+                </article>
+
+
+                <article class="c-menu-card">
+
+                    <img src="./assets/images/menu/dessert/sabanova-soft.png" alt="サバノバソフト">
+
+                    <h3 class="c-menu-card__name">サバノバソフト</h3>
+                    <p class="c-menu-card__price">￥450</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- セット価格 -->
+        <div class="p-menu__group-title">
+            <div>
+                <img src="./assets/images/common/logofish.svg" alt="">
+                <h2>セット価格</h2>
+            </div>
+        </div>
+
+        <!-- レギュラーセット -->
+        <section class="p-menu__section" id="regular-set">
+
+            <aside class="p-menu__note">
+                <h3>セット内容変更</h3>
+
+                <div>
+                    <div>
+                        <h4>ドリンク　サイズアップ</h4>
+                        <ul>
+                            <li><span>・Mサイズ</span><span>＋￥90</span></li>
+                            <li><span>・Lサイズ</span><span>＋￥150</span></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4>サイドメニュー　変更</h4>
+                        <ul>
+                            <li><span>・フライドポテト</span><span>＋￥70</span></li>
+                            <li><span>・オニオンリング</span><span>＋￥90</span></li>
+                            <li><span>・サラダ</span><span>＋￥170</span></li>
+                            <li><span>・サーモンサラダ</span><span>＋￥300</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+            <h2 class="p-menu__section-title">
+                レギュラーセット
+            </h2>
+
+            <div class="p-menu__list">
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/set/saba-set/saba-sandwich-set-regular.png" alt="サバサンドレギュラーセット">
+                    <h3 class="c-menu-card__name">サバサンド<br>レギュラーセット</h3>
+                    <p class="c-menu-card__price">￥850</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/set/saba-set/saba-sandwich-set-half.png" alt="サバサンドハーフセット">
+                    <h3 class="c-menu-card__name">サバサンド<br>ハーフセット</h3>
+                    <p class="c-menu-card__price">￥640</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/set/saba-set/saba-sandwich-set-long.png" alt="サバサンドロングセット">
+                    <h3 class="c-menu-card__name">サバサンド<br>ロングセット</h3>
+                    <p class="c-menu-card__price">￥1220</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/set/saba-set/saba-wrap-set.png" alt="サバラップセット">
+                    <h3 class="c-menu-card__name">サバラップセット</h3>
+                    <p class="c-menu-card__price">￥810</p>
+                </article>
+
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/set/smoked-salmon-set/smoked-salmon-sandwich-set-regular.png"
+                        alt="スモークサーモンサンドレギュラーセット">
+                    <h3 class="c-menu-card__name">スモークサーモンサンド<br>レギュラーセット</h3>
+                    <p class="c-menu-card__price">￥900</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/set/smoked-salmon-set/smoked-salmon-sandwich-set-half.png"
+                        alt="スモークサーモンサンドハーフセット">
+                    <h3 class="c-menu-card__name">スモークサーモンサンド<br>ハーフセット</h3>
+                    <p class="c-menu-card__price">￥660</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/set/smoked-salmon-set/smoked-salmon-sandwich-set-long.png"
+                        alt="スモークサーモンサンドロングセット">
+                    <h3 class="c-menu-card__name">スモークサーモンサンド<br>ロングセット</h3>
+                    <p class="c-menu-card__price">￥1320</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/set/smoked-salmon-set/smoked-salmon-wrap-set.png"
+                        alt="スモークサーモンラップセット">
+                    <h3 class="c-menu-card__name">スモークサーモンラップセット</h3>
+                    <p class="c-menu-card__price">￥850</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/set/salmon-avocado-set/salmon-avocado-sandwich-set-regular.png"
+                        alt="サーモンアボカドサンドレギュラーセット">
+                    <h3 class="c-menu-card__name">サーモンアボカドサンド<br>レギュラーセット</h3>
+                    <p class="c-menu-card__price">￥960</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/set/salmon-avocado-set/salmon-avocado-sandwich-set-half.png"
+                        alt="サーモンアボカドサンドハーフセット">
+                    <h3 class="c-menu-card__name">サーモンアボカドサンド<br>ハーフセット</h3>
+                    <p class="c-menu-card__price">￥690</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/set/salmon-avocado-set/salmon-avocado-sandwich-set-long.png"
+                        alt="サーモンアボカドサンドロングセット">
+                    <h3 class="c-menu-card__name">サーモンアボカドサンド<br>ロングセット</h3>
+                    <p class="c-menu-card__price">￥1440</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/set/salmon-avocado-set/salmon-avocado-wrap-set.png"
+                        alt="サーモンアボカドラップセット">
+                    <h3 class="c-menu-card__name">サーモンアボカドラップセット</h3>
+                    <p class="c-menu-card__price">￥910</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/set/cod-fritter-set/cod-fritter-sandwich-set-regular.png"
+                        alt="タラフリットサンドレギュラーセット">
+                    <h3 class="c-menu-card__name">タラフリットサンド<br>レギュラーセット</h3>
+                    <p class="c-menu-card__price">￥910</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/set/cod-fritter-set/cod-fritter-sandwich-set-half.png"
+                        alt="タラフリットサンドハーフセット">
+                    <h3 class="c-menu-card__name">タラフリットサンド<br>ハーフセット</h3>
+                    <p class="c-menu-card__price">￥670</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/set/cod-fritter-set/cod-fritter-sandwich-set-long.png"
+                        alt="タラフリットサンドロングセット">
+                    <h3 class="c-menu-card__name">タラフリットサンド<br>ロングセット</h3>
+                    <p class="c-menu-card__price">￥1340</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/set/cod-fritter-set/cod-fritter-wrap-set.png" alt="タラフリットラップセット">
+                    <h3 class="c-menu-card__name">タラフリットラップセット</h3>
+                    <p class="c-menu-card__price">￥870</p>
+                </article>
+
+
+            </div>
+
+        </section>
+
+        <!-- ヘルシーランチセット -->
+        <section class="p-menu__section" id="lunch-set">
+
+            <h2 class="p-menu__section-title">
+                ヘルシーランチセット<br>
+                平日 10:00〜14:00
+            </h2>
+
+            <div class="p-menu__list">
+
+                <article class="c-menu-card">
+                    <span class="c-menu-card__badge c-menu-card__badge--lunch">
+                        平日ランチ限定
+                    </span>
+
+                    <img src="./assets/images/menu/set/saba-set/saba-sandwich-set-regular.png" alt="ヘルシーセット">
+
+                    <h3 class="c-menu-card__name">ヘルシーセット</h3>
+                    <p class="c-menu-card__price">￥550</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <span class="c-menu-card__badge c-menu-card__badge--lunch">
+                        平日ランチ限定
+                    </span>
+
+                    <img src="./assets/images/menu/set/simple-sandwich-set.png" alt="シンプルサンドセット">
+
+                    <h3 class="c-menu-card__name">シンプルサンドセット</h3>
+                    <p class="c-menu-card__price">￥500</p>
+                </article>
+
+
+                <aside class="p-menu__note">
+
+                    <h3>メイングリルキャロット＋対象Sドリンク</h3>
+
+                    <div>
+                        <div>
+                            <h4>☆ソース・サイドメニュー変更不可</h4>
+                            <ul>
+                                <li>・カロリー80%カットマヨネーズ</li>
+                                <li>・グリルキャロット</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4>☆ドリンク変更不可</h4>
+                            <ul>
+                                <li>・ゼロコーラ</li>
+                                <li>・コーヒー（HOT/ICE）</li>
+                                <li>・アッサムティー（HOT/ICE）</li>
+                                <li>・カモミールティー（HOT/ICE）</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+        <!-- ランチセット -->
+        <section class="p-menu__section">
+
+            <h2 class="p-menu__section-title">
+                ランチセット<br>
+                平日 10:00〜14:00
+            </h2>
+
+            <div class="p-menu__list">
+
+                <article class="c-menu-card">
+                    <span class="c-menu-card__badge c-menu-card__badge--lunch">
+                        平日ランチ限定
+                    </span>
+
+                    <img src="./assets/images/menu/set/saba-set/saba-sandwich-set-regular.png" alt="サバサンドレギュラーランチセット">
+                    <h3 class="c-menu-card__name">サバサンドレギュラー<br>ランチセット</h3>
+                    <p class="c-menu-card__price">￥740</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <span class="c-menu-card__badge c-menu-card__badge--lunch">
+                        平日ランチ限定
+                    </span>
+
+                    <img src="./assets/images/menu/set/saba-set/saba-wrap-set.png" alt="サバラップランチセット">
+                    <h3 class="c-menu-card__name">サバラップ<br>ランチセット</h3>
+                    <p class="c-menu-card__price">￥690</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <span class="c-menu-card__badge c-menu-card__badge--lunch">
+                        平日ランチ限定
+                    </span>
+
+                    <img src="./assets/images/menu/set/smoked-salmon-set/smoked-salmon-sandwich-set-regular.png"
+                        alt="スモークサーモンサンドレギュラーランチセット">
+                    <h3 class="c-menu-card__name"><span style="white-space: nowrap;">スモークサーモンサンドレギュラー</span><br>ランチセット
+                    </h3>
+                    <p class="c-menu-card__price">￥850</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <span class="c-menu-card__badge c-menu-card__badge--lunch">
+                        平日ランチ限定
+                    </span>
+
+                    <img src="./assets/images/menu/set/smoked-salmon-set/smoked-salmon-wrap-set.png"
+                        alt="スモークサーモンラップランチセット">
+                    <h3 class="c-menu-card__name">スモークサーモンラップ<br>ランチセット</h3>
+                    <p class="c-menu-card__price">￥800</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <span class="c-menu-card__badge c-menu-card__badge--lunch">
+                        平日ランチ限定
+                    </span>
+
+                    <img src="./assets/images/menu/set/cod-fritter-set/cod-fritter-wrap-set.png" alt="タラフリットラップランチセット">
+                    <h3 class="c-menu-card__name">タラフリットラップ<br>ランチセット</h3>
+                    <p class="c-menu-card__price">￥820</p>
+                </article>
+
+
+
+            </div>
+
+        </section>
+
+        <!-- ディナー -->
+
+        <section class="p-menu__section" id="dinner">
+
+            <h2 class="p-menu__section-title">
+                ディナー<br>
+                夜限定 17:30〜21:00
+            </h2>
+
+            <div class="p-menu__list">
+                <article class="c-menu-card">
+                    <span class="c-menu-card__badge c-menu-card__badge--dinner">
+                        ディナー限定
+                    </span>
+
+                    <img src="./assets/images/menu/night/night-mini-fish-and-chips.png" alt="ミニフィッシュ＆チップス+対象アルコールコンビ">
+                    <h3 class="c-menu-card__name">ミニフィッシュ＆チップス<br>+対象アルコールコンビ</h3>
+                    <p class="c-menu-card__price">￥980</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <span class="c-menu-card__badge c-menu-card__badge--dinner">
+                        ディナー限定
+                    </span>
+
+                    <img src="./assets/images/menu/night/night-fry-basket.png" alt="3種のフライバスケット">
+                    <h3 class="c-menu-card__name">3種のフライバスケット</h3>
+                    <p class="c-menu-card__price">￥620</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <span class="c-menu-card__badge c-menu-card__badge--dinner">
+                        ディナー限定
+                    </span>
+
+                    <img src="./assets/images/menu/night/night-saba-quesadilla.png" alt="サバケサディーヤ">
+                    <h3 class="c-menu-card__name">サバケサディーヤ</h3>
+                    <p class="c-menu-card__price">￥680</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <span class="c-menu-card__badge c-menu-card__badge--dinner">
+                        ディナー限定
+                    </span>
+
+                    <img src="./assets/images/menu/night/night-salmon-avocado-marinade.png" alt="サーモン＆アボカドのバジルマリネ">
+                    <h3 class="c-menu-card__name"><span style="white-space: nowrap;">サーモン＆アボカドのバジルマリネ</span></h3>
+                    <p class="c-menu-card__price">￥580</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <span class="c-menu-card__badge c-menu-card__badge--dinner">
+                        ディナー限定
+                    </span>
+
+                    <img src="./assets/images/menu/night/night-caprese.png" alt="カプレーゼ">
+                    <h3 class="c-menu-card__name">カプレーゼ</h3>
+                    <p class="c-menu-card__price">￥520</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <span class="c-menu-card__badge c-menu-card__badge--dinner">
+                        ディナー限定
+                    </span>
+
+                    <img src="./assets/images/menu/night/night-coke-highball-float.png" alt="コークハイフロート">
+                    <h3 class="c-menu-card__name">コークハイフロート</h3>
+                    <p class="c-menu-card__price">￥520</p>
+                </article>
+
+            </div>
+
+
+        </section>
+
+        <!-- 単品価格 -->
+        <div class="p-menu__group-title">
+            <div>
+                <img src="./assets/images/common/logofish.svg" alt="">
+                <h2>単品価格</h2>
+            </div>
+        </div>
+
+        <!-- サンドイッチ -->
+        <section class="p-menu__section" id="sandwich">
+
+            <h2 class="p-menu__section-title">
+                サンドイッチ
+            </h2>
+
+            <div class="p-menu__list">
+
+                <article class="c-menu-card">
+                    <span class="c-menu-card__badge c-menu-card__badge--lunch">
+                        平日ランチ　￥370
+                    </span>
+
+                    <img src="./assets/images/menu/sandwich/saba/saba-sandwich-regular.png" alt="サバサンド">
+                    <h3 class="c-menu-card__name">サバサンド<br>レギュラー</h3>
+                    <p class="c-menu-card__price">￥430</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/sandwich/saba/saba-sandwich-half.png" alt="サバサンド">
+                    <h3 class="c-menu-card__name">サバサンド<br>ハーフ</h3>
+                    <p class="c-menu-card__price">￥220</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/sandwich/saba/saba-sandwich-long.png" alt="サバサンド">
+                    <h3 class="c-menu-card__name">サバサンド<br>ロング</h3>
+                    <p class="c-menu-card__price">￥800</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/sandwich/saba/saba-wrap.png" alt="サバラップ">
+                    <h3 class="c-menu-card__name">サバラップ</h3>
+                    <p class="c-menu-card__price">￥390</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/sandwich/smoked-salmon/smoked-salmon-sandwich-regular.png"
+                        alt="スモークサーモンサンドレギュラー">
+                    <h3 class="c-menu-card__name">スモークサーモンサンド<br>レギュラー</h3>
+                    <p class="c-menu-card__price">￥480</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/sandwich/smoked-salmon/smoked-salmon-sandwich-half.png"
+                        alt="スモークサーモンサンドハーフ">
+                    <h3 class="c-menu-card__name">スモークサーモンサンド<br>ハーフ</h3>
+                    <p class="c-menu-card__price">￥240</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/sandwich/smoked-salmon/smoked-salmon-sandwich-long.png"
+                        alt="スモークサーモンサンドロング">
+                    <h3 class="c-menu-card__name">スモークサーモンサンド<br>ロング</h3>
+                    <p class="c-menu-card__price">￥900</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/sandwich/smoked-salmon/smoked-salmon-wrap.png" alt="スモークサーモンラップ">
+                    <h3 class="c-menu-card__name">スモークサーモンラップ</h3>
+                    <p class="c-menu-card__price">￥430</p>
+                </article>
+
+
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/sandwich/salmon-avocado/salmon-avocado-sandwich-regular.png"
+                        alt="サーモンアボカドサンドレギュラー">
+                    <h3 class="c-menu-card__name">サーモンアボカドサンド<br>レギュラー</h3>
+                    <p class="c-menu-card__price">￥540</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/sandwich/salmon-avocado/salmon-avocado-sandwich-half.png"
+                        alt="サーモンアボカドサンドハーフ">
+                    <h3 class="c-menu-card__name">サーモンアボカドサンド<br>ハーフ</h3>
+                    <p class="c-menu-card__price">￥270</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/sandwich/salmon-avocado/salmon-avocado-sandwich-long.png"
+                        alt="サーモンアボカドサンドロング">
+                    <h3 class="c-menu-card__name">サーモンアボカドサンド<br>ロング</h3>
+                    <p class="c-menu-card__price">￥1020</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/sandwich/salmon-avocado/salmon-avocado-wrap.png" alt="サーモンアボカドラップ">
+                    <h3 class="c-menu-card__name">サーモンアボカドラップ</h3>
+                    <p class="c-menu-card__price">￥490</p>
+                </article>
+
+
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/sandwich/cod-fritter/cod-fritter-sandwich-regular.png"
+                        alt="タラフリットサンドレギュラー">
+                    <h3 class="c-menu-card__name">タラフリットサンド<br>レギュラー</h3>
+                    <p class="c-menu-card__price">￥490</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/sandwich/cod-fritter/cod-fritter-sandwich-half.png"
+                        alt="タラフリットサンドハーフ">
+                    <h3 class="c-menu-card__name">タラフリットサンド<br>ハーフ</h3>
+                    <p class="c-menu-card__price">￥250</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/sandwich/cod-fritter/cod-fritter-sandwich-long.png"
+                        alt="タラフリットサンドロング">
+                    <h3 class="c-menu-card__name">タラフリットサンド<br>ロング</h3>
+                    <p class="c-menu-card__price">￥920</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/sandwich/cod-fritter/cod-fritter-wrap.png" alt="タラフリットラップ">
+                    <h3 class="c-menu-card__name">タラフリットラップ</h3>
+                    <p class="c-menu-card__price">￥450</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <span class="c-menu-card__badge c-menu-card__badge--lunch-wide">
+                        平日 10:00-17:30限定
+                    </span>
+
+                    <img src="./assets/images/menu/sandwich/simple-sandwich.png" alt="シンプルサンド">
+                    <h3 class="c-menu-card__name">シンプルサンド</h3>
+                    <p class="c-menu-card__price">￥260</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- サイド -->
+        <section class="p-menu__section" id="side">
+
+            <h2 class="p-menu__section-title">
+                サイド
+            </h2>
+
+            <div class="p-menu__list">
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/side/grilled-carrot.png" alt="グリルキャロット">
+                    <h3 class="c-menu-card__name">グリルキャロット</h3>
+                    <p class="c-menu-card__price">￥200</p>
+                </article>
+
+
+
+                <article class="c-menu-card">
+                    <span class="c-menu-card__badge c-menu-card__badge--plus">
+                        セットに＋￥70
+                    </span>
+
+                    <img src="./assets/images/menu/side/french-fries.png" alt="フライドポテト">
+                    <h3 class="c-menu-card__name">フライドポテト</h3>
+                    <p class="c-menu-card__price">￥250</p>
+                </article>
+
+
+
+                <article class="c-menu-card">
+                    <span class="c-menu-card__badge c-menu-card__badge--plus">
+                        セットに＋￥90
+                    </span>
+
+                    <img src="./assets/images/menu/side/onion-rings.png" alt="オニオンリング">
+                    <h3 class="c-menu-card__name">オニオンリング</h3>
+                    <p class="c-menu-card__price">￥270</p>
+                </article>
+
+
+
+                <article class="c-menu-card">
+                    <span class="c-menu-card__badge c-menu-card__badge--plus">
+                        セットに＋￥170
+                    </span>
+
+                    <img src="./assets/images/menu/side/salad.png" alt="サラダ">
+                    <h3 class="c-menu-card__name">サラダ</h3>
+                    <p class="c-menu-card__price">￥350</p>
+                </article>
+
+
+
+                <article class="c-menu-card">
+                    <span class="c-menu-card__badge c-menu-card__badge--plus">
+                        セットに＋￥300
+                    </span>
+
+                    <img src="./assets/images/menu/side/salmon-salad.png" alt="サーモンサラダ">
+                    <h3 class="c-menu-card__name">サーモンサラダ</h3>
+                    <p class="c-menu-card__price">￥480</p>
+                </article>
+
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/side/carrot-rapee.png" alt="キャロットラペ(単品)">
+                    <h3 class="c-menu-card__name">キャロットラペ(単品)</h3>
+                    <p class="c-menu-card__price">￥150</p>
+                </article>
+
+
+            </div>
+
+        </section>
+
+        <!-- フード -->
+        <section class="p-menu__section" id="food">
+
+            <h2 class="p-menu__section-title">
+                フード
+            </h2>
+
+
+            <div class="p-menu__list">
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/food/large-fish-and-chips.png" alt="フィッシュ＆チップス">
+                    <h3 class="c-menu-card__name">フィッシュ＆チップス</h3>
+                    <p class="c-menu-card__price">￥1470</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/food/clam-chowder.png" alt="クラムチャウダー">
+                    <h3 class="c-menu-card__name">クラムチャウダー</h3>
+                    <p class="c-menu-card__price">￥280</p>
+                </article>
+
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/food/onion-soup.png" alt="オニオンスープ">
+                    <h3 class="c-menu-card__name">オニオンスープ</h3>
+                    <p class="c-menu-card__price">￥250</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <span class="c-menu-card__badge c-menu-card__badge--weekend">
+                        週末限定
+                    </span>
+
+                    <img src="./assets/images/menu/food/weekend-box.png" alt="WEEKEND BOX">
+                    <h3 class="c-menu-card__name">WEEKEND BOX</h3>
+                    <p class="c-menu-card__price">￥2980</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- デザート -->
+        <section class="p-menu__section" id="dessert">
+
+            <h2 class="p-menu__section-title">
+                デザート
+            </h2>
+
+            <div class="p-menu__list">
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/dessert/sabanova-soft.png" alt="サバノバソフト">
+                    <h3 class="c-menu-card__name">サバノバソフト</h3>
+                    <p class="c-menu-card__price">￥450</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/dessert/soft.png" alt="ソフトクリーム">
+                    <h3 class="c-menu-card__name">ソフトクリーム<br>
+                        <span style="white-space: nowrap;">(濃厚バニラ/潮風ラムネ/ミックス)</span>
+                    </h3>
+                    <p class="c-menu-card__price">￥390</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/dessert/float.png" alt="フロート">
+                    <h3 class="c-menu-card__name">フロート<br>
+                        (コーラ/ゼロコーラ/<br>ジンジャーエール/コーヒー)</h3>
+                    <p class="c-menu-card__price">￥440</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/dessert/premium-float.png" alt="プレミアムフロート">
+                    <h3 class="c-menu-card__name">プレミアムフロート<br>(レモネード/パイナップル<br>/エルダーフラワー)</h3>
+                    <p class="c-menu-card__price">￥480</p>
+                </article>
+
+
+            </div>
+
+        </section>
+
+        <!-- ドリンク -->
+        <div class="p-menu__group-title">
+            <div>
+                <img src="./assets/images/common/logofish.svg" alt="">
+                <h2>ドリンク</h2>
+            </div>
+        </div>
+
+        <!-- ソフトドリンク -->
+        <section class="p-menu__section" id="drink">
+
+            <h2 class="p-menu__section-title">
+                ソフトドリンク<br>
+                S￥260 ／ M￥330 ／ L￥390
+            </h2>
+
+            <div class="p-menu__list">
+
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/drink/cola.png" alt="コーラ">
+                    <h3 class="c-menu-card__name">コーラ</h3>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/drink/zero-cola.png" alt="ゼロコーラ">
+                    <h3 class="c-menu-card__name">ゼロコーラ</h3>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/drink/ginger-ale.png" alt="ジンジャーエール">
+                    <h3 class="c-menu-card__name">ジンジャーエール</h3>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/drink/coffee-iced.png" alt="コーヒー">
+                    <h3 class="c-menu-card__name">コーヒー<br>(HOT/ICE)</h3>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/drink/iced-tea.png" alt="アッサムティー">
+                    <h3 class="c-menu-card__name">アッサムティー<br>(HOT/ICE)<br>(レモン/ミルク)</h3>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/drink/chamomile-tea-iced.png" alt="カモミールティー">
+                    <h3 class="c-menu-card__name">カモミールティー<br>(HOT/ICE)</h3>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/drink/homemade-lemonade.png" alt="自家製レモネード">
+                    <h3 class="c-menu-card__name">自家製レモネード</h3>
+                    <p class="c-menu-card__price">各サイズ＋￥40</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/drink/pineapple-juice.png" alt="パイナップルジュース">
+                    <h3 class="c-menu-card__name">パイナップルジュース</h3>
+                    <p class="c-menu-card__price">各サイズ＋￥40</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/drink/shiso-cider.png" alt="シソサイダー">
+                    <h3 class="c-menu-card__name">シソサイダー</h3>
+                    <p class="c-menu-card__price">各サイズ＋￥40</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/drink/elderflower-cider.png" alt="エルダーフラワーサイダー">
+                    <h3 class="c-menu-card__name">エルダーフラワーサイダー</h3>
+                    <p class="c-menu-card__price">各サイズ＋￥40</p>
+                </article>
+
+
+
+            </div>
+
+        </section>
+
+        <!-- アルコール -->
+        <section class="p-menu__section" id="alcohol">
+
+            <h2 class="p-menu__section-title">
+                アルコール
+            </h2>
+
+            <div class="p-menu__list">
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/alcohol/draft-beer.png" alt="生ビール">
+                    <h3 class="c-menu-card__name">生ビール</h3>
+                    <p class="c-menu-card__price">￥540</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/alcohol/corona-beer.png" alt="コロナビール">
+                    <h3 class="c-menu-card__name">コロナビール</h3>
+                    <p class="c-menu-card__price">￥550</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/alcohol/highball.png" alt="ハイボール">
+                    <h3 class="c-menu-card__name">ハイボール</h3>
+                    <p class="c-menu-card__price">￥450</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/alcohol/coke-highball.png" alt="コークハイ">
+                    <h3 class="c-menu-card__name">コークハイ</h3>
+                    <p class="c-menu-card__price">￥450</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/alcohol/lemon-mojito.png" alt="レモンモヒート">
+                    <h3 class="c-menu-card__name">レモンモヒート</h3>
+                    <p class="c-menu-card__price">￥550</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/alcohol/sour.png" alt="サワー">
+                    <h3 class="c-menu-card__name">サワー<br>(レモン/シソ/パイナップル)</h3>
+                    <p class="c-menu-card__price">￥390</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- カスタマイズ -->
+        <div class="p-menu__group-title" id="customize">
+            <div>
+                <img src="./assets/images/common/logofish.svg" alt="">
+                <h2>カスタマイズ</h2>
+            </div>
+        </div>
+
+        <!-- トッピング -->
+        <section class="p-menu__section">
+
+            <h2 class="p-menu__section-title">
+                サンド・ラップ用トッピング<br>
+                <span style="white-space: nowrap;">☆オニオン/レタス/ソース/レモン 増量無料</span>
+            </h2>
+
+            <div class="p-menu__list">
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/topping/topping-tomato.png" alt="トマト">
+                    <h3 class="c-menu-card__name">トマト</h3>
+                    <p class="c-menu-card__price">￥50</p>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/topping/topping-cilantro.png" alt="パクチー">
+                    <h3 class="c-menu-card__name">パクチー</h3>
+                    <p class="c-menu-card__price">￥50</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/topping/topping-carrot-rapee.png" alt="キャロットラペ">
+                    <h3 class="c-menu-card__name">キャロットラペ</h3>
+                    <p class="c-menu-card__price">￥60</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/topping/topping-avocado.png" alt="アボカド">
+                    <h3 class="c-menu-card__name">アボカド</h3>
+                    <p class="c-menu-card__price">￥100</p>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/topping/topping-mozzarella.png" alt="モッツァレラチーズ">
+                    <h3 class="c-menu-card__name">モッツァレラチーズ</h3>
+                    <p class="c-menu-card__price">￥120</p>
+                </article>
+
+
+            </div>
+
+        </section>
+
+        <!-- ソース -->
+        <section class="p-menu__section">
+
+            <h2 class="p-menu__section-title">
+                選べるソース<br>
+                単品 ￥70
+            </h2>
+
+            <div class="p-menu__list">
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/sauce/sauce-dill.png" alt="ディルソース">
+                    <h3 class="c-menu-card__name">ディルソース</h3>
+                </article>
+
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/sauce/sauce-light-mayo.png" alt="カロリーカットマヨネーズ">
+                    <h3 class="c-menu-card__name">カロリーカットマヨネーズ</h3>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/sauce/sauce-lemon-yogurt.png" alt="レモンヨーグルトソース">
+                    <h3 class="c-menu-card__name">レモンヨーグルトソース</h3>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/sauce/sauce-garlic-butter.png" alt="ガーリックバターソース">
+                    <h3 class="c-menu-card__name">ガーリックバターソース</h3>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/sauce/sauce-miso-mayo.png" alt="味噌マヨ">
+                    <h3 class="c-menu-card__name">味噌マヨ</h3>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/sauce/sauce-chunky-salsa.png" alt="具沢山サルサ">
+                    <h3 class="c-menu-card__name">具沢山サルサ</h3>
+                </article>
+
+                <article class="c-menu-card">
+                    <img src="./assets/images/menu/sauce/sauce-light-basil.png" alt="バジルソース">
+                    <h3 class="c-menu-card__name">バジルソース</h3>
+                </article>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <a href="#top" class="c-back-to-top">TOP</a>
+    <footer class="l-footer">
+        <div class="l-footer__inner">
+
+
+            <div class="l-footer__brand">
+                <a href="./index.html" class="l-footer__logo">
+                    <img src="./assets/images/common/logo.svg" alt="サバノバ SABANOVA">
+                </a>
+
+
+                <address class="l-footer__shop-info">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="l-footer__tel-icon">
+                        <path
+                            d="M21 16.42V19.9561C21 20.4811 20.5941 20.9167 20.0705 20.9537C19.6331 20.9846 19.2763 21 19 21C10.1634 21 3 13.8366 3 5C3 4.72371 3.01545 4.36687 3.04635 3.9295C3.08337 3.40588 3.51894 3 4.04386 3H7.5801C7.83678 3 8.05176 3.19442 8.07753 3.4498C8.10067 3.67907 8.12218 3.86314 8.14207 4.00202C8.34435 5.41472 8.75753 6.75936 9.3487 8.00303C9.44359 8.20265 9.38171 8.44159 9.20185 8.57006L7.04355 10.1118C8.35752 13.1811 10.8189 15.6425 13.8882 16.9565L15.4271 14.8019C15.5572 14.6199 15.799 14.5573 16.001 14.6532C17.2446 15.2439 18.5891 15.6566 20.0016 15.8584C20.1396 15.8782 20.3225 15.8995 20.5502 15.9225C20.8056 15.9483 21 16.1633 21 16.42Z">
+                        </path>
+                    </svg>014-383-1083<br>
+                    〒014-38310<br>
+                    東京都中野区中央0-0-0
+                </address>
+            </div>
+
+            <nav class="l-footer__nav">
+                <ul class="l-footer__nav-list">
+                    <li><a href="./index.html">ホーム</a></li>
+                    <li><a href="./menu.html">メニュー</a></li>
+                    <li><a href="./index.html#about">サバノバについて</a></li>
+                    <li><a href="./index.html#campaign">キャンペーン</a></li>
+                </ul>
+
+                <ul class="l-footer__nav-list">
+                    <li><a href="./index.html#store-info">店舗詳細</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                    <li><a href="#">アレルギー情報</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+        <p class="l-footer__copyright">
+            <small>&copy;2026 株式会社HEALTHYJUNK All rights reserved.</small>
+        </p>
+
+    </footer>
+</body>
+
+</html>

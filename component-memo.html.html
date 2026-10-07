@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Component Memo</title>
+</head>
+
+<body>
+
+    <!-- ここにカードテンプレを保存 -->
+
+
+
+    <!-- ====================
+     ランチ限定 / オレンジ
+==================== -->
+    <article class="c-menu-card">
+        <span class="c-menu-card__badge c-menu-card__badge--lunch">
+            平日ランチ限定
+        </span>
+
+        <img src="" alt="">
+        <h3 class="c-menu-card__name"></h3>
+        <p class="c-menu-card__price">￥</p>
+    </article>
+
+
+
+
+
+    <!-- ====================
+     ディナー限定 / ブルー
+==================== -->
+    <article class="c-menu-card">
+        <span class="c-menu-card__badge c-menu-card__badge--dinner">
+            ディナー限定
+        </span>
+
+        <img src="" alt="">
+        <h3 class="c-menu-card__name"></h3>
+        <p class="c-menu-card__price">￥</p>
+    </article>
+
+
+
+
+
+    <!-- ====================
+     セットに＋ / イエロー
+==================== -->
+    <article class="c-menu-card">
+        <span class="c-menu-card__badge c-menu-card__badge--plus">
+            セットに＋￥000
+        </span>
+
+        <img src="" alt="">
+        <h3 class="c-menu-card__name"></h3>
+        <p class="c-menu-card__price">￥</p>
+    </article>
+
+
+
+
+    <!-- ====================
+     週末限定 / ターコイズ
+==================== -->
+    <article class="c-menu-card">
+        <span class="c-menu-card__badge c-menu-card__badge--weekend">
+            週末限定
+        </span>
+
+        <img src="" alt="">
+        <h3 class="c-menu-card__name"></h3>
+        <p class="c-menu-card__price">￥</p>
+    </article>
+
+
+
+
+
+    <!-- ====================
+     長いバッジ / オレンジ
+==================== -->
+    <article class="c-menu-card">
+        <span class="c-menu-card__badge c-menu-card__badge--lunch-wide">
+            平日 10:00-17:30限定
+        </span>
+
+        <img src="" alt="">
+        <h3 class="c-menu-card__name"></h3>
+        <p class="c-menu-card__price">￥</p>
+    </article>
+
+
+    <!-- ====================
+     SECTION HEADING
+==================== -->
+    <div class="c-section-heading">
+        <h2 class="c-section-heading__title">
+            日本語タイトル
+            <span>ENGLISH</span>
+        </h2>
+    </div>
+
+    <!-- ====================
+     CIRCLE ARROW
+==================== -->
+    <span class="c-circle-arrow" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+            </path>
+        </svg>
+    </span>
+
+    <!-- ====================
+     通常メニューカード
+==================== -->
+    <article class="c-menu-card">
+        <img src="" alt="">
+        <h3 class="c-menu-card__name"></h3>
+        <p class="c-menu-card__price">￥</p>
+    </article>
+
+    <!-- ====================
+     MENU SECTION
+==================== -->
+    <section class="p-menu__section" id="">
+
+        <h2 class="p-menu__section-title">
+            セクション名
+        </h2>
+
+        <div class="p-menu__list">
+
+            <!-- c-menu-card を必要数コピペ -->
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ====================
+     MENU SECTION / 2行見出し
+==================== -->
+    <section class="p-menu__section" id="">
+
+        <h2 class="p-menu__section-title">
+            セクション名<br>
+            平日 10:00〜14:00
+        </h2>
+
+        <div class="p-menu__list">
+
+            <!-- c-menu-card を必要数コピペ -->
+
+        </div>
+
+    </section>
+
+
+    <!-- ====================
+     MENU GROUP TITLE
+==================== -->
+    <div class="p-menu__group-title">
+        <div>
+            <img src="./assets/images/common/logofish.svg" alt="">
+            <h2>セット価格</h2>
+        </div>
+    </div>
+
+
+    <!-- ====================
+     MENU NOTE / 単独
+==================== -->
+    <aside class="p-menu__note">
+
+        <h3>セット内容変更</h3>
+
+        <div>
+            <div>
+                <h4>ドリンク　サイズアップ</h4>
+                <ul>
+                    <li><span>・Mサイズ</span><span>＋￥90</span></li>
+                    <li><span>・Lサイズ</span><span>＋￥150</span></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>サイドメニュー　変更</h4>
+                <ul>
+                    <li><span>・フライドポテト</span><span>＋￥70</span></li>
+                    <li><span>・オニオンリング</span><span>＋￥90</span></li>
+                    <li><span>・サラダ</span><span>＋￥170</span></li>
+                    <li><span>・サーモンサラダ</span><span>＋￥300</span></li>
+                </ul>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <!-- ====================
+     商品2枚 + NOTE
+==================== -->
+    <section class="p-menu__section" id="lunch-set">
+
+        <h2 class="p-menu__section-title">
+            ヘルシーランチセット<br>
+            平日 10:00〜14:00
+        </h2>
+
+        <div class="p-menu__list">
+
+            <article class="c-menu-card">
+                <span class="c-menu-card__badge c-menu-card__badge--lunch">
+                    平日ランチ限定
+                </span>
+
+                <img src="" alt="">
+                <h3 class="c-menu-card__name"></h3>
+                <p class="c-menu-card__price">￥</p>
+            </article>
+
+            <article class="c-menu-card">
+                <span class="c-menu-card__badge c-menu-card__badge--lunch">
+                    平日ランチ限定
+                </span>
+
+                <img src="" alt="">
+                <h3 class="c-menu-card__name"></h3>
+                <p class="c-menu-card__price">￥</p>
+            </article>
+
+            <aside class="p-menu__note">
+
+                <h3>メイングリルキャロット＋対象Sドリンク</h3>
+
+                <div>
+                    <div>
+                        <h4>☆ソース・サイドメニュー変更不可</h4>
+                        <ul>
+                            <li>・カロリー80%カットマヨネーズ</li>
+                            <li>・グリルキャロット</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4>☆ドリンク変更不可</h4>
+                        <ul>
+                            <li>・ゼロコーラ</li>
+                            <li>・コーヒー（HOT/ICE）</li>
+                            <li>・アッサムティー（HOT/ICE）</li>
+                            <li>・カモミールティー（HOT/ICE）</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </aside>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
